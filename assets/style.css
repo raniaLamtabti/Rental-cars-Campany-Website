@@ -1,0 +1,1683 @@
+/** variables **/
+/** Body **/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #192428;
+  overflow-x: hidden;
+}
+
+.logo h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  color: #39ACE7;
+}
+
+.logo h1 span {
+  font-weight: lighter;
+}
+
+/** Body End **/
+/** Header **/
+header {
+  height: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #414C50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 10 12 #192428;
+          box-shadow: 0 10 12 #192428;
+  position: fixed;
+  width: 100%;
+  z-index: 1000000;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  padding: none;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul li {
+  padding-left: 50px;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul .active a {
+  color: #0784B5;
+}
+
+header nav .burgerMenuBtn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 80px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border: none;
+  background-color: transparent;
+  overflow: hidden;
+  outline: none;
+  display: none;
+  margin-left: -50px;
+}
+
+header nav .burgerMenuBtn .burgerMenu {
+  height: 6px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header nav .burgerMenuBtn .burgerMenu::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+
+header nav .burgerMenuBtn .burgerMenu::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+}
+
+/** Header End **/
+/** Container **/
+.container {
+  padding-top: 100px;
+}
+
+.container .glass {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.1)));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  --webkit-backdrop-filter: blur(20px);
+}
+
+/** Container End **/
+/**************************************************** Home ****************************************************/
+.home {
+  /** Hero Section **/
+  /** Hero Section End **/
+  /** Quality Section **/
+  /** Quality Section End **/
+  /** Team Section **/
+  /** Team Section End **/
+  /** Gallery Section **/
+  /** Gallery Section End **/
+}
+
+.home .hero {
+  height: calc(100vh - 100px);
+  padding: 5% 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.home .hero .left-side {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .hero .left-side h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 103px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.home .hero .left-side p {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 51px;
+  color: #C4D0D5;
+}
+
+.home .hero .left-side a {
+  width: 250px;
+  height: 70px;
+  border-radius: 5px;
+  background: #39ACE7;
+  -webkit-box-shadow: 0px 0px 20px #39ACE7;
+          box-shadow: 0px 0px 20px #39ACE7;
+  text-transform: capitalize;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 18px;
+  color: #fff;
+}
+
+.home .hero .right-side {
+  height: 100%;
+  position: relative;
+}
+
+.home .hero .right-side .bgd-img {
+  position: absolute;
+  right: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.home .hero .right-side .car-rate {
+  position: absolute;
+  top: 0%;
+  right: 10%;
+  width: 700px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 30px 0px;
+}
+
+.home .hero .right-side .car-rate .slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.home .hero .right-side .car-rate .slide .rat {
+  padding-top: 10px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.home .hero .right-side .car-rate .slide .rat h2 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 220px;
+  color: #fff;
+  margin-top: -170px;
+}
+
+.home .hero .right-side .car-rate .slide .rat .rat-cont {
+  -webkit-transition: margin-top 1s ease-in-out;
+  transition: margin-top 1s ease-in-out;
+}
+
+.home .hero .right-side .car-rate .slide .text {
+  height: 140px;
+  overflow: hidden;
+}
+
+.home .hero .right-side .car-rate .slide .text h3 {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 49px;
+  color: #fff;
+}
+
+.home .hero .right-side .car-rate .slide .text p {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: #C4D0D5;
+}
+
+.home .hero .right-side .car-rate .slide .text .text-cont {
+  position: relative;
+}
+
+.home .hero .right-side .car-rate .slide .text .text-cont .txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.home .hero .right-side .car-img {
+  position: absolute;
+  top: 40px;
+  right: 10%;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.home .hero .right-side .car-img .car-cont {
+  -webkit-transition: margin-top 1s ease-in-out;
+  transition: margin-top 1s ease-in-out;
+}
+
+.home .hero .right-side .car-img .car-cont img {
+  width: 100%;
+}
+
+.home .hero .right-side .car-info {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 447px;
+  height: 146px;
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .hero .right-side .car-info .name {
+  height: 150px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  width: 40.33%;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.home .hero .right-side .car-info .name h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 119px;
+  color: #fff;
+  line-height: 45px;
+  display: inline;
+}
+
+.home .hero .right-side .car-info .name .name-cont {
+  width: 600%;
+  -webkit-transition: margin-left 1s ease-in-out;
+  transition: margin-left 1s ease-in-out;
+}
+
+.home .hero .right-side .car-info .price-day {
+  text-align: center;
+  margin: 5px auto;
+  color: #C4D0D5;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-size: 30px;
+}
+
+.home .hero .right-side .car-info .price-day .price {
+  height: 38px;
+  overflow: hidden;
+}
+
+.home .hero .right-side .car-info .price-day .price .price-cont {
+  -webkit-transition: margin-top 1s ease-in-out;
+  transition: margin-top 1s ease-in-out;
+}
+
+.home .hero .right-side .nav-btn {
+  position: absolute;
+  bottom: 0;
+  right: 110px;
+}
+
+.home .hero .right-side .nav-btn button {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #C4D0D5;
+  cursor: pointer;
+  -webkit-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+  outline: none;
+  border: none;
+  margin: 0 20px;
+}
+
+.home .quality {
+  width: 100%;
+  padding: 2% 5%;
+  background-color: #414C50;
+}
+
+.home .quality h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 103px;
+  text-align: left;
+  color: #fff;
+}
+
+.home .quality h1 span {
+  color: #39ACE7;
+}
+
+.home .quality .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr 5fr;
+      grid-template-columns: 7fr 5fr;
+  padding: 3% 0;
+}
+
+.home .quality .content .qualities {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+  row-gap: 10%;
+}
+
+.home .quality .content .qualities .qlty {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.home .quality .content .qualities .qlty .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .quality .content .qualities .qlty .title h2 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 33px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.home .quality .content .qualities .qlty p {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: #C4D0D5;
+  margin-top: 50px;
+}
+
+.home .quality .content .qualities .qltyP {
+  background-color: #192428;
+  -webkit-box-shadow: 7px 10px 42px rgba(25, 36, 40, 0.77);
+          box-shadow: 7px 10px 42px rgba(25, 36, 40, 0.77);
+}
+
+.home .quality .content .qualities .qltyS {
+  background-color: #707070;
+}
+
+.home .quality .content .content-img {
+  height: 100%;
+}
+
+.home .quality .content .content-img img {
+  height: 632px;
+  width: 80%;
+  margin-left: 20%;
+  border-radius: 20px;
+}
+
+.home .team {
+  padding: 3% 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (340px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 340px);
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  row-gap: 10%;
+}
+
+.home .team .member {
+  height: 500px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.home .team .member img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home .team .member .path {
+  width: 726px;
+  height: 600px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -300px;
+  right: -363px;
+}
+
+.home .team .member .text {
+  position: absolute;
+  top: 43%;
+  right: 10px;
+}
+
+.home .team .member .text h1 {
+  font-size: 40px;
+  font-family: "Palanquin", "Roboto", sans-serif;
+  text-align: right;
+  color: #39ACE7;
+}
+
+.home .team .member .text h2 {
+  font-size: 24px;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  text-align: right;
+  color: #192428;
+}
+
+.home .team .member .text p {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.home .gallery {
+  overflow: hidden;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  padding: 5%;
+  margin-top: 50px;
+}
+
+.home .gallery .bg-img {
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.home .gallery .bg-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.home .gallery .content {
+  padding: 3% 3%;
+}
+
+.home .gallery .content .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.home .gallery .content .top h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 103px;
+  text-align: left;
+  color: #fff;
+}
+
+.home .gallery .content .top a {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: left;
+  color: #29abfa;
+}
+
+.home .gallery .content .imgs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.home .gallery .content .imgs img {
+  border-radius: 10px;
+}
+
+.home .gallery .content .imgs .image {
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.home .gallery .content .imgs .image img {
+  width: 95%;
+  height: 100%;
+}
+
+.home .gallery .content .imgs .images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (360px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 360px);
+  -webkit-column-gap: 8%;
+          column-gap: 8%;
+  row-gap: 10%;
+  height: 260px;
+}
+
+.home .gallery .content .imgs .images img {
+  width: 100%;
+  height: 100%;
+}
+
+/**************************************************** Home End ****************************************************/
+/**************************************************** Gallery ****************************************************/
+.galleries .hero {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.galleries .hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.galleries .hero .topGlass {
+  height: 100%;
+  width: 100%;
+}
+
+.galleries .hero h1 {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 100px;
+  line-height: 166px;
+  color: #fff;
+}
+
+.galleries .hero h1 span {
+  font-weight: bold;
+  color: #39ACE7;
+}
+
+.galleries .meddleSection {
+  padding: 3% 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.galleries .meddleSection .left {
+  position: relative;
+}
+
+.galleries .meddleSection .left img {
+  border-radius: 10px;
+  height: 723px;
+  width: 436px;
+  -webkit-box-shadow: 0px 7px 41px #C4D0D5;
+          box-shadow: 0px 7px 41px #C4D0D5;
+}
+
+.galleries .meddleSection .left .image1 {
+  position: absolute;
+  left: 20%;
+}
+
+.galleries .meddleSection .left .image2 {
+  margin-top: 50%;
+}
+
+.galleries .meddleSection .right {
+  margin-left: 15%;
+}
+
+.galleries .meddleSection .right .textBox {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.galleries .meddleSection .right .textBox h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  color: #fff;
+}
+
+.galleries .meddleSection .right .textBox p {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 59px;
+  text-align: left;
+  color: #C4D0D5;
+}
+
+.galleries .meddleSection .right .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.galleries .meddleSection .right .images img {
+  border-radius: 20px;
+  width: 452px;
+  margin: 3% 0;
+}
+
+.galleries .gallerySection {
+  padding: 3% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.galleries .gallerySection .gallerysContainer {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.galleries .gallerySection .gallerysContainer .gallery {
+  padding: 3% 20px;
+  width: 340px;
+}
+
+.galleries .gallerySection .gallerysContainer .gallery .content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.galleries .gallerySection .gallerysContainer .gallery .content img {
+  width: 100%;
+  height: 40%;
+}
+
+.galleries .gallerySection .gallerysContainer .gallery .content .text {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.galleries .gallerySection .gallerysContainer .gallery .content .text h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  color: #fff;
+}
+
+.galleries .gallerySection .gallerysContainer .gallery .content .text p {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 42px;
+  color: #C4D0D5;
+}
+
+/**************************************************** Gallery End ****************************************************/
+/**************************************************** Reservation ****************************************************/
+.reservation .hero {
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.reservation .hero img {
+  position: absolute;
+  width: 100%;
+  margin-top: -150px;
+  height: auto;
+}
+
+.reservation .hero .text {
+  position: absolute;
+  bottom: 23%;
+  right: 5%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.reservation .hero .text h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 100px;
+  line-height: 166px;
+  text-align: left;
+  color: #192428;
+}
+
+.reservation .hero .text h1 span {
+  font-weight: bold;
+  color: #39ACE7;
+}
+
+.reservation .reservationSection {
+  padding: 3% 5%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.reservation .reservationSection img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.reservation .reservationSection .content {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  width: 90%;
+}
+
+.reservation .reservationSection .content h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  color: #fff;
+}
+
+.reservation .reservationSection .content h1 span {
+  color: #39ACE7;
+}
+
+.reservation .reservationSection .content .formContainer {
+  margin: 20px 20%;
+  border-radius: 10px;
+}
+
+.reservation .reservationSection .content .formContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5% 10%;
+}
+
+.reservation .reservationSection .content .formContainer form .inputs {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservation .reservationSection .content .formContainer form select {
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.reservation .reservationSection .content .formContainer form label {
+  margin-left: 20px;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #C4D0D5;
+}
+
+.reservation .reservationSection .content .formContainer form #days {
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.reservation .reservationSection .content .formContainer form #calc {
+  padding: 10px;
+  color: #fff;
+  background-color: #39ACE7;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px #39ACE7;
+          box-shadow: 0px 0px 20px #39ACE7;
+  border: none;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+}
+
+.reservation .reservationSection .content .formContainer form .result {
+  padding: 10px 40px;
+  border: 2px solid #39ACE7;
+  border-radius: 10px;
+  margin: 10px 50px;
+}
+
+.reservation .reservationSection .content .formContainer form .result p {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  color: #39ACE7;
+}
+
+/**************************************************** Reservation End ****************************************************/
+/**************************************************** Contact ****************************************************/
+.contact .hero {
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact .hero img {
+  position: absolute;
+  width: 100%;
+  margin-top: -80px;
+  height: auto;
+}
+
+.contact .hero .text {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.contact .hero .text h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 100px;
+  line-height: 166px;
+  text-align: left;
+  color: #192428;
+}
+
+.contact .hero .text h1 span {
+  font-weight: bold;
+  color: #39ACE7;
+}
+
+.contact .contactSection {
+  width: 100%;
+  padding: 3% 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact .contactSection .map {
+  width: 100%;
+  height: 100%;
+}
+
+.contact .contactSection .map iframe {
+  border-radius: 20px;
+  width: -webkit-fill-available;
+  height: 100%;
+}
+
+.contact .contactSection .formContainer {
+  margin: 0px 0px 0px 15%;
+  border-radius: 10px;
+}
+
+.contact .contactSection .formContainer h1 {
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  color: #fff;
+}
+
+.contact .contactSection .formContainer h1 span {
+  color: #39ACE7;
+}
+
+.contact .contactSection .formContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5% 10%;
+}
+
+.contact .contactSection .formContainer form .inputs {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  padding: 10px 20px;
+}
+
+.contact .contactSection .formContainer form .inputs::-webkit-input-placeholder {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #C4D0D5;
+}
+
+.contact .contactSection .formContainer form .inputs:-ms-input-placeholder {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #C4D0D5;
+}
+
+.contact .contactSection .formContainer form .inputs::-ms-input-placeholder {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #C4D0D5;
+}
+
+.contact .contactSection .formContainer form .inputs::placeholder {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #C4D0D5;
+}
+
+.contact .contactSection .formContainer form .send {
+  padding: 10px 40px;
+  border: 2px solid #39ACE7;
+  border-radius: 10px;
+  margin: 10px 100px;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  color: #39ACE7;
+  background-color: transparent;
+}
+
+.contact .contactSection .alertBox {
+  position: absolute;
+  top: -400px;
+  left: 40%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #C4D0D5;
+}
+
+.contact .contactSection .alertBox #okBtn {
+  text-align: center;
+}
+
+.contact .contactSection .alertBox #okBtn #ok {
+  border-radius: 5px;
+  border: none;
+  background: #39ACE7;
+  -webkit-box-shadow: 0px 0px 20px #39ACE7;
+          box-shadow: 0px 0px 20px #39ACE7;
+  text-transform: capitalize;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding: 18px;
+  color: #fff;
+}
+
+/**************************************************** Contact End ****************************************************/
+/** Footer **/
+footer {
+  background-color: #414C50;
+  padding: 3% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .logoFollow {
+  text-align: center;
+}
+
+footer .logoFollow p {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  color: #C4D0D5;
+}
+
+footer .logoFollow .socialMedia {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .text h6 {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  text-align: left;
+  color: #0784B5;
+}
+
+footer .text p {
+  margin-top: 30px;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 46px;
+  text-align: left;
+  color: #C4D0D5;
+}
+
+footer .inputs input {
+  height: 50px;
+  width: 300px;
+  display: block;
+  padding: 20px 10px;
+}
+
+footer .inputs input::-webkit-input-placeholder {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  color: #C4D0D5;
+}
+
+footer .inputs input:-ms-input-placeholder {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  color: #C4D0D5;
+}
+
+footer .inputs input::-ms-input-placeholder {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  color: #C4D0D5;
+}
+
+footer .inputs input::placeholder {
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  color: #C4D0D5;
+}
+
+footer .inputs button {
+  height: 70px;
+  width: 300px;
+  border-radius: 5px;
+  background: transparent;
+  border: 4px solid #39ACE7;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  text-align: left;
+  color: #39ACE7;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/** Footer End **/
+/** Media **/
+@media screen and (max-width: 1024px) {
+  header nav {
+    width: 90%;
+    position: absolute;
+  }
+  header nav ul {
+    width: 100%;
+    background-color: #414C50;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0 0 20px 20px;
+    max-height: 0;
+    -webkit-transition: max-height 1s ease-out;
+    transition: max-height 1s ease-out;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    overflow: hidden;
+  }
+  header nav ul li {
+    padding: 0;
+    margin: 50px 0px;
+  }
+  header .burgerMenuBtn {
+    display: block !important;
+  }
+  .home .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-grid-rows: 1fr 8fr !important;
+        grid-template-rows: 1fr 8fr !important;
+  }
+  .home .hero .right-side {
+    margin-top: 40px;
+  }
+  .home .hero .right-side .car-rate {
+    width: 600px !important;
+    height: 150px !important;
+    padding: 0px 10px 10px 0px !important;
+  }
+  .home .hero .right-side .car-rate .gallery .rat h2 {
+    font-size: 190px !important;
+    margin-top: -143px !important;
+  }
+  .home .hero .right-side .car-rate .gallery .text h3 {
+    font-size: 40px !important;
+  }
+  .home .hero .right-side .car-rate .gallery .text p {
+    font-size: 30px;
+  }
+  .home .hero .right-side .car-info {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 447px;
+    height: 146px;
+    border-radius: 10px;
+    padding: 40px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home .hero .right-side .car-info .name h1 {
+    font-family: "Palanquin", "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 119px;
+    color: #fff;
+    margin-top: -90px;
+  }
+  .home .hero .right-side .car-info .price-day {
+    text-align: center;
+    margin: 0 auto;
+    color: #C4D0D5;
+    font-family: "Roboto", "Palanquin", sans-serif;
+    font-size: 30px;
+  }
+  .home .hero .left-side {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .home .hero .left-side p {
+    margin: 20px 0;
+  }
+  .home .quality .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-grid-rows: 1.5fr 1fr !important;
+        grid-template-rows: 1.5fr 1fr !important;
+  }
+  .home .quality .content .qualities {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+  }
+  .home .quality .content .qualities .qlty {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  .home .quality .content .content-img {
+    text-align: center;
+  }
+  .home .quality .content .content-img img {
+    margin: 0 auto !important;
+  }
+  .home .gallery .content .imgs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-grid-rows: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+  }
+  .home .gallery .content .imgs .image {
+    text-align: center;
+  }
+  .home .gallery .content .imgs .images {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .galleries .meddleSection {
+    padding: 3% 5%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-grid-rows: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+  }
+  .galleries .meddleSection .left {
+    position: relative;
+    text-align: center;
+  }
+  .galleries .meddleSection .right {
+    margin-left: 0 !important;
+    margin-top: 50px;
+  }
+  .reservation .hero {
+    margin-bottom: -152px;
+  }
+  .reservation .reservationSection {
+    height: 50vh;
+  }
+  .reservation .reservationSection .content .formContainer {
+    margin: 20px 10%;
+  }
+  .contact .contactSection {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-grid-rows: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+  }
+  .contact .contactSection .formContainer {
+    margin: 40px 0px 0px 0px !important;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header .logo h1 {
+    font-size: 40px !important;
+  }
+  .home .hero {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .home .hero .left-side h1 {
+    font-size: 68px !important;
+  }
+  .home .hero .left-side p {
+    font-size: 20px !important;
+  }
+  .home .hero .right-side {
+    display: none;
+  }
+  .home .quality h1 {
+    font-size: 50px !important;
+  }
+  .home .quality .content {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-grid-rows: 3.3fr 1fr !important;
+        grid-template-rows: 3.3fr 1fr !important;
+  }
+  .home .quality .content .qualities {
+    width: 357px;
+  }
+  .home .quality .content .qualities .qlty {
+    width: 80%;
+  }
+  .home .team {
+    row-gap: 2% !important;
+  }
+  .home .gallery {
+    margin-top: 100px !important;
+  }
+  .home .gallery .content .top h1 {
+    font-size: 39px !important;
+  }
+  .home .gallery .content .imgs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-grid-rows: 1fr 4fr !important;
+        grid-template-rows: 1fr 4fr !important;
+  }
+  .home .gallery .content .imgs .image {
+    width: 90% !important;
+  }
+  .home .gallery .content .imgs .image img {
+    width: 93% !important;
+    margin-left: -29px !important;
+  }
+  .home .gallery .content .imgs .images {
+    padding: inherit;
+    margin: 0;
+    text-align: center;
+  }
+  .home .gallery .content .imgs .images img {
+    width: 80% !important;
+  }
+  .galleries .hero h1 {
+    top: 20% !important;
+    font-size: 45px !important;
+    line-height: 78px !important;
+  }
+  .galleries .meddleSection {
+    padding: 3% 5%;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-grid-rows: 1fr 2.5fr !important;
+        grid-template-rows: 1fr 2.5fr !important;
+  }
+  .galleries .meddleSection .left {
+    position: relative;
+    text-align: center;
+  }
+  .galleries .meddleSection .left img {
+    width: 250px !important;
+    height: 400px !important;
+  }
+  .galleries .meddleSection .right .images img {
+    width: 320px !important;
+  }
+  .reservation .hero {
+    margin-bottom: 0;
+  }
+  .reservation .hero img {
+    height: -webkit-fill-available;
+  }
+  .reservation .hero .text h1 {
+    font-size: 37px;
+    line-height: 62px;
+  }
+  .reservation .reservationSection {
+    height: 85vh;
+  }
+  .reservation .reservationSection .content h1 {
+    font-size: 35px !important;
+  }
+  .reservation .reservationSection .content .formContainer {
+    margin: 20px 5%;
+  }
+  .reservation .reservationSection .content .formContainer form .result {
+    margin: 10px 0;
+    padding: 10px 0px;
+  }
+  .reservation .reservationSection .content .formContainer form .result p {
+    font-size: 20px !important;
+  }
+  .contact .hero {
+    margin-bottom: 0;
+  }
+  .contact .hero img {
+    height: -webkit-fill-available;
+  }
+  .contact .hero .text h1 {
+    font-size: 37px;
+    line-height: 62px;
+  }
+  .contact .contactSection .formContainer h1 {
+    font-size: 35px !important;
+  }
+  .contact .contactSection .formContainer form .result {
+    margin: 10px 0;
+    padding: 10px 0px;
+  }
+  .contact .contactSection .formContainer form .result p {
+    font-size: 20px !important;
+  }
+  footer .logoFollow {
+    text-align: center;
+  }
+  footer .logoFollow p {
+    font-size: 24px !important;
+  }
+}
+
+/** Media End **/
+/** Call Action Classes **/
+.burgerMenuToggle {
+  max-height: 500px;
+  -webkit-transition: max-height 1s ease-in;
+  transition: max-height 1s ease-in;
+}
+
+.burgerMenuBtn.open .burgerMenu {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+}
+
+.burgerMenuBtn.open .burgerMenu::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+.burgerMenuBtn.open .burgerMenu::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.rat-cont1 {
+  margin-top: 0px;
+}
+
+.rat-cont2 {
+  margin-top: -170%;
+}
+
+.rat-cont3 {
+  margin-top: -271%;
+}
+
+.txt-Op {
+  opacity: 100% !important;
+}
+
+.name-cont1 {
+  margin-left: 0px;
+}
+
+.name-cont2 {
+  margin-left: -152px;
+}
+
+.name-cont3 {
+  margin-left: -301px;
+}
+
+.price-cont1 {
+  margin-top: 0px;
+}
+
+.price-cont2 {
+  margin-top: -40px;
+}
+
+.price-cont3 {
+  margin-top: -80px;
+}
+
+.activeBtn {
+  background-color: #39ACE7 !important;
+}
+
+.car-cont1 {
+  margin-top: 0px;
+}
+
+.car-cont2 {
+  margin-top: -62%;
+}
+
+.car-cont3 {
+  margin-top: -120%;
+}
+
+/** Call Action Classes End **/
+.alertTitle {
+  color: #39ACE7;
+  font-family: "Palanquin", "Roboto", sans-serif;
+}
+
+.alertLabel {
+  color: #414C50;
+  font-family: "Palanquin", "Roboto", sans-serif;
+  font-size: 30px;
+  text-align: left;
+}
+
+.alertP {
+  color: #192428;
+  font-family: "Roboto", "Palanquin", sans-serif;
+  font-size: 24px;
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */

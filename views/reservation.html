@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Blue<span>Road</span></h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="active">
+                    <a href="../index.html">home</a>
+                </li>
+                <li>
+                    <a href="gallerie.html">gallerie</a>
+                </li>
+                <li>
+                    <a href="reservation.html">reservation</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+            <button class="burgerMenuBtn">
+                <div class="burgerMenu"></div>
+            </button>
+        </nav>
+    </header>
+
+    <div class="container reservation">
+        <section class="hero">
+            <img src="../assets/images/young-woman-testing-car-car-showroom.jpg" alt="women car">
+            <div class="text glass">
+                <h1><span>Be</span> one of our<br><span>Awesome</span> client </h1>
+            </div>
+        </section>
+        <section class="reservationSection">
+            <img src="../assets/iconesSvgs/Group 11.svg" alt="">
+            <div class="content">
+                <h1>Choose Your <span>Raid</span></h1>
+                <div class="formContainer glass">
+                    <form action="">
+                        <select name="" id="type" class="inputs">
+                            <option value="" disabled selected>Chose your raid</option>
+                            <option value="10" id="1">Moto</option>
+                            <option value="12" id="2">Citadine</option>
+                            <option value="14" id="3">Compact</option>
+                            <option value="20" id="4">Berline</option>
+                            <option value="16" id="5">Utilitaire</option>
+                            <option value="900" id="6">Engin de chantier</option>
+                            <option value="250" id="7">Camion</option>
+                        </select>
+                        <select name="" id="fule" class="inputs">
+                            <option value="" disabled selected>Chose your motor fule</option>
+                            <option value="5" id="1">Electrique</option>
+                            <option value="9" id="2">Hybride</option>
+                            <option value="14" id="3">Essence</option>
+                            <option value="21" id="4">Diesel</option>
+                        </select>
+                        <div class="inputs">
+                            <input type="radio" name="type" id="man">
+                            <label for="man">Manuel</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="radio" name="type" id="aut">
+                            <label for="aut">Automatic</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" name="days" id="days" min="1" value="1">
+                            <label for="days">How Many Days</label>
+                        </div>
+                        <button id="calc">Calc</button>
+                        <div class="result">
+                            <p>Price for <span id="daysNum">---</span> day(s):<span id="result">---</span> $</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="logoFollow">
+            <div class="logo">
+                <h1>Blue<span>Road</span></h1>
+            </div>
+            <p>blue.road@gmail.com</p>
+            <div class="socialMedia">
+                <img src="../assets/iconesSvgs/021-facebook.svg" alt="fb icon">
+                <img src="../assets/iconesSvgs/025-instagram.svg" alt="ig icone">
+                <img src="../assets/iconesSvgs/043-twitter.svg" alt="tw icon">
+                < /div>
+            </div>
+            <div class="text">
+                <h6>Subscribe To Our<br>Newsletter</h6>
+                <p>Subscribe to our newsletter to receive all our news and offers. </p>
+            </div>
+            <div class="inputs">
+                <input type="email" name="" id="" placeholder="Email">
+                <button>Suscribe</button>
+            </div>
+    </footer>
+
+    <script src="../assets/app.js"></script>
+
+    <script src="../assets/reservation.js"></script>
+</body>
+
+</html>

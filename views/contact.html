@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Blue<span>Road</span></h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="active">
+                    <a href="../index.html">home</a>
+                </li>
+                <li>
+                    <a href="gallerie.html">gallerie</a>
+                </li>
+                <li>
+                    <a href="reservation.html">reservation</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+            <button class="burgerMenuBtn">
+                <div class="burgerMenu"></div>
+            </button>
+        </nav>
+    </header>
+
+    <div class="container contact">
+        <section class="hero">
+            <img src="../assets/images/contact image.jpg" alt="contact image">
+            <div class="text glass">
+                <h1><span>Be</span> one of our<br><span>Awesome</span> client </h1>
+            </div>
+        </section>
+        <section class="contactSection">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.6802960591194!2d-9.237707884436247!3d32.293572415783885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYoucode%20Safi!5e0!3m2!1sen!2sma!4v1613661125327!5m2!1sen!2sma"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="formContainer glass">
+                <form action="">
+                    <h1>Send As Your <span>Feedback</span></h1>
+                    <input type="text" name="name" id="name" class="inputs" placeholder="Your Name">
+                    <input type="email" name="email" id="email" class="inputs" placeholder="Your Email">
+                    <input type="text" name="subject" id="subject" class="inputs" placeholder="Message Subject">
+                    <textarea name="message" id="message" rows="20"></textarea>
+                    <button class="send" id="send">
+                        Send
+                    </button>
+                </form>
+            </div>
+            <!-- <div class="alertBox">
+                <label for="">Your Name:</label>
+                <p id="nameDisplay"></p>
+                <label for="">Your Email:</label>
+                <p id="emailDisplay"></p>
+                <label for="">Message Subject:</label>
+                <p id="subjectDisplay"></p>
+                <label for="">Message</label>
+                <p id="massageDisplay"></p>
+                <div id="okBtn">
+                    <button id="ok">OK</button>
+                </div>
+            </div> -->
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="logoFollow">
+            <div class="logo">
+                <h1>Blue<span>Road</span></h1>
+            </div>
+            <p>blue.road@gmail.com</p>
+            <div class="socialMedia">
+                <img src="../assets/iconesSvgs/021-facebook.svg" alt="fb icon">
+                <img src="../assets/iconesSvgs/025-instagram.svg" alt="ig icone">
+                <img src="../assets/iconesSvgs/043-twitter.svg" alt="tw icon">
+            </div>
+        </div>
+        <div class="text">
+            <h6>Subscribe To Our<br>Newsletter</h6>
+            <p>Subscribe to our newsletter to receive all our news and offers. </p>
+        </div>
+        <div class="inputs">
+            <input type="email" name="" id="" placeholder="Email">
+            <button>Suscribe</button>
+        </div>
+    </footer>
+
+    <script src="../assets/app.js"></script>
+    <script src="../assets/contact.js"></script>
+</body>
+
+</html>
